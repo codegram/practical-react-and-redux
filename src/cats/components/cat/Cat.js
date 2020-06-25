@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import useScore from "../../../pets/hooks/useScore";
 
-const Dog = ({ name, initialScore }) => {
+const Cat = ({ name, initialScore }) => {
   const { score, increaseScore } = useScore(initialScore);
 
   return (
@@ -15,9 +15,10 @@ const Dog = ({ name, initialScore }) => {
   );
 };
 
-Dog.propTypes = {
+Cat.propTypes = {
   name: PropTypes.string.isRequired,
   initialScore: PropTypes.number.isRequired,
 };
 
-export default Dog;
+export default Cat;
+
