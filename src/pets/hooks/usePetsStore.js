@@ -16,6 +16,9 @@ const usePetsStore = () => {
     hugPet(name) {
       dispatch(fromActions.hugPet(name));
     },
+    chooseNextHuggablePet() {
+      dispatch(fromActions.chooseNextHuggablePet(pets));
+    },
   };
 };
 
